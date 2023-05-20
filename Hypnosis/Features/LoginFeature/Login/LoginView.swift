@@ -57,10 +57,8 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = LoginViewModel(state: .init())
-        
         NavigationStack {
-            LoginView(viewModel: viewModel)
+            LoginView(viewModel: .init())
         }
         .asAllPreviews()
     }

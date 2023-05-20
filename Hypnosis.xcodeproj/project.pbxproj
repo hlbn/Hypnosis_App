@@ -14,7 +14,6 @@
 		A4A2D4BA2A1958900048773C /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4B92A1958900048773C /* LoginRoute.swift */; };
 		A4A2D4BD2A195B4C0048773C /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = A4A2D4BC2A195B4C0048773C /* SwiftUINavigation */; };
 		A4E3DB962A1920FC0096CA32 /* HypnosisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */; };
-		A4E3DB982A1920FC0096CA32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DB972A1920FC0096CA32 /* ContentView.swift */; };
 		A4E3DB9A2A1920FD0096CA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E3DB992A1920FD0096CA32 /* Assets.xcassets */; };
 		A4E3DB9D2A1920FD0096CA32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E3DB9C2A1920FD0096CA32 /* Preview Assets.xcassets */; };
 		A4E3DBA72A1920FD0096CA32 /* HypnosisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBA62A1920FD0096CA32 /* HypnosisTests.swift */; };
@@ -52,7 +51,6 @@
 		A4A2D4B92A1958900048773C /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
 		A4E3DB922A1920FC0096CA32 /* Hypnosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisApp.swift; sourceTree = "<group>"; };
-		A4E3DB972A1920FC0096CA32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4E3DB992A1920FD0096CA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E3DB9C2A1920FD0096CA32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4E3DBA22A1920FD0096CA32 /* HypnosisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				A4E3DB992A1920FD0096CA32 /* Assets.xcassets */,
-				A4E3DB972A1920FC0096CA32 /* ContentView.swift */,
 				A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */,
 				A4A2D4B62A19514D0048773C /* Features */,
 				A4E3DB9B2A1920FD0096CA32 /* Preview Content */,
@@ -363,7 +360,6 @@
 			files = (
 				A4A2D4BA2A1958900048773C /* LoginRoute.swift in Sources */,
 				A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */,
-				A4E3DB982A1920FC0096CA32 /* ContentView.swift in Sources */,
 				A4A2D4AE2A194E5B0048773C /* LoginByEmailViewModel.swift in Sources */,
 				A4A2D4AC2A194E310048773C /* LoginByEmailView.swift in Sources */,
 				A4A2D4A82A194D5B0048773C /* Preview.swift in Sources */,

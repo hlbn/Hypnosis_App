@@ -23,7 +23,7 @@ struct HypnosisApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView(viewModel: .init())
         }
     }
 }
