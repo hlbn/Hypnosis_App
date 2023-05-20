@@ -14,6 +14,11 @@
 		A4E3DBA72A1920FD0096CA32 /* HypnosisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBA62A1920FD0096CA32 /* HypnosisTests.swift */; };
 		A4E3DBB12A1920FD0096CA32 /* HypnosisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBB02A1920FD0096CA32 /* HypnosisUITests.swift */; };
 		A4E3DBB32A1920FD0096CA32 /* HypnosisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBB22A1920FD0096CA32 /* HypnosisUITestsLaunchTests.swift */; };
+		A4E3DBC12A19388E0096CA32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */; };
+		A4E3DBC42A1939F30096CA32 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A4E3DBC32A1939F30096CA32 /* FirebaseAnalytics */; };
+		A4E3DBC62A1939F30096CA32 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */; };
+		A4E3DBC92A193D3D0096CA32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */; };
+		A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBCB2A193DE50096CA32 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,8 @@
 		A4E3DBAC2A1920FD0096CA32 /* HypnosisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3DBB02A1920FD0096CA32 /* HypnosisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisUITests.swift; sourceTree = "<group>"; };
 		A4E3DBB22A1920FD0096CA32 /* HypnosisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4E3DBCB2A193DE50096CA32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E3DBC62A1939F30096CA32 /* FirebaseAnalyticsSwift in Frameworks */,
+				A4E3DBC92A193D3D0096CA32 /* FirebaseAuth in Frameworks */,
+				A4E3DBC42A1939F30096CA32 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,7 @@
 				A4E3DBA52A1920FD0096CA32 /* HypnosisTests */,
 				A4E3DBAF2A1920FD0096CA32 /* HypnosisUITests */,
 				A4E3DB932A1920FC0096CA32 /* Products */,
+				A4E3DBC72A193D3D0096CA32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */,
+				A4E3DBCA2A193DA00096CA32 /* LoginFeature */,
 				A4E3DB972A1920FC0096CA32 /* ContentView.swift */,
 				A4E3DB992A1920FD0096CA32 /* Assets.xcassets */,
+				A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */,
 				A4E3DB9B2A1920FD0096CA32 /* Preview Content */,
 			);
 			path = Hypnosis;
@@ -127,6 +140,21 @@
 			path = HypnosisUITests;
 			sourceTree = "<group>";
 		};
+		A4E3DBC72A193D3D0096CA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E3DBCA2A193DA00096CA32 /* LoginFeature */ = {
+			isa = PBXGroup;
+			children = (
+				A4E3DBCB2A193DE50096CA32 /* LoginView.swift */,
+			);
+			path = LoginFeature;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +171,11 @@
 			dependencies = (
 			);
 			name = Hypnosis;
+			packageProductDependencies = (
+				A4E3DBC32A1939F30096CA32 /* FirebaseAnalytics */,
+				A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */,
+				A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */,
+			);
 			productName = Hypnosis;
 			productReference = A4E3DB922A1920FC0096CA32 /* Hypnosis.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +248,9 @@
 				Base,
 			);
 			mainGroup = A4E3DB892A1920FC0096CA32;
+			packageReferences = (
+				A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A4E3DB932A1920FC0096CA32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +269,7 @@
 			files = (
 				A4E3DB9D2A1920FD0096CA32 /* Preview Assets.xcassets in Resources */,
 				A4E3DB9A2A1920FD0096CA32 /* Assets.xcassets in Resources */,
+				A4E3DBC12A19388E0096CA32 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */,
 				A4E3DB982A1920FC0096CA32 /* ContentView.swift in Sources */,
 				A4E3DB962A1920FC0096CA32 /* HypnosisApp.swift in Sources */,
 			);
@@ -414,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hypnosis/Preview Content\"";
@@ -430,8 +469,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = adamhl.Hypnosis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamhl.Hypnosis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hypnosis/Preview Content\"";
@@ -459,8 +500,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = adamhl.Hypnosis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamhl.Hypnosis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +625,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4E3DBC32A1939F30096CA32 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4E3DB8A2A1920FC0096CA32 /* Project object */;
 }
