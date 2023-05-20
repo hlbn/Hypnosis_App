@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4A2D4A82A194D5B0048773C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4A72A194D5B0048773C /* Preview.swift */; };
+		A4A2D4AC2A194E310048773C /* LoginByEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */; };
+		A4A2D4AE2A194E5B0048773C /* LoginByEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */; };
+		A4A2D4B82A1954310048773C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4B72A1954310048773C /* LoginViewModel.swift */; };
+		A4A2D4BA2A1958900048773C /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2D4B92A1958900048773C /* LoginRoute.swift */; };
+		A4A2D4BD2A195B4C0048773C /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = A4A2D4BC2A195B4C0048773C /* SwiftUINavigation */; };
 		A4E3DB962A1920FC0096CA32 /* HypnosisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */; };
 		A4E3DB982A1920FC0096CA32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DB972A1920FC0096CA32 /* ContentView.swift */; };
 		A4E3DB9A2A1920FD0096CA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E3DB992A1920FD0096CA32 /* Assets.xcassets */; };
@@ -39,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4A2D4A72A194D5B0048773C /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailView.swift; sourceTree = "<group>"; };
+		A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailViewModel.swift; sourceTree = "<group>"; };
+		A4A2D4B72A1954310048773C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A4A2D4B92A1958900048773C /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
 		A4E3DB922A1920FC0096CA32 /* Hypnosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisApp.swift; sourceTree = "<group>"; };
 		A4E3DB972A1920FC0096CA32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A2D4BD2A195B4C0048773C /* SwiftUINavigation in Frameworks */,
 				A4E3DBC62A1939F30096CA32 /* FirebaseAnalyticsSwift in Frameworks */,
 				A4E3DBC92A193D3D0096CA32 /* FirebaseAuth in Frameworks */,
 				A4E3DBC42A1939F30096CA32 /* FirebaseAnalytics in Frameworks */,
@@ -81,10 +93,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4A2D4A42A194D1D0048773C /* Kits */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2D4A52A194D460048773C /* SwiftUIKit */,
+			);
+			path = Kits;
+			sourceTree = "<group>";
+		};
+		A4A2D4A52A194D460048773C /* SwiftUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2D4A62A194D4D0048773C /* Views */,
+			);
+			path = SwiftUIKit;
+			sourceTree = "<group>";
+		};
+		A4A2D4A62A194D4D0048773C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2D4A72A194D5B0048773C /* Preview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4A2D4A92A194DCB0048773C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A4E3DBCB2A193DE50096CA32 /* LoginView.swift */,
+				A4A2D4B72A1954310048773C /* LoginViewModel.swift */,
+				A4A2D4B92A1958900048773C /* LoginRoute.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A4A2D4AA2A194E030048773C /* LoginByEmail */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */,
+				A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */,
+			);
+			path = LoginByEmail;
+			sourceTree = "<group>";
+		};
+		A4A2D4B62A19514D0048773C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A4E3DBCA2A193DA00096CA32 /* LoginFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		A4E3DB892A1920FC0096CA32 = {
 			isa = PBXGroup;
 			children = (
 				A4E3DB942A1920FC0096CA32 /* Hypnosis */,
+				A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */,
+				A4A2D4A42A194D1D0048773C /* Kits */,
 				A4E3DBA52A1920FD0096CA32 /* HypnosisTests */,
 				A4E3DBAF2A1920FD0096CA32 /* HypnosisUITests */,
 				A4E3DB932A1920FC0096CA32 /* Products */,
@@ -105,11 +170,10 @@
 		A4E3DB942A1920FC0096CA32 /* Hypnosis */ = {
 			isa = PBXGroup;
 			children = (
-				A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */,
-				A4E3DBCA2A193DA00096CA32 /* LoginFeature */,
-				A4E3DB972A1920FC0096CA32 /* ContentView.swift */,
 				A4E3DB992A1920FD0096CA32 /* Assets.xcassets */,
-				A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */,
+				A4E3DB972A1920FC0096CA32 /* ContentView.swift */,
+				A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */,
+				A4A2D4B62A19514D0048773C /* Features */,
 				A4E3DB9B2A1920FD0096CA32 /* Preview Content */,
 			);
 			path = Hypnosis;
@@ -150,7 +214,8 @@
 		A4E3DBCA2A193DA00096CA32 /* LoginFeature */ = {
 			isa = PBXGroup;
 			children = (
-				A4E3DBCB2A193DE50096CA32 /* LoginView.swift */,
+				A4A2D4AA2A194E030048773C /* LoginByEmail */,
+				A4A2D4A92A194DCB0048773C /* Login */,
 			);
 			path = LoginFeature;
 			sourceTree = "<group>";
@@ -175,6 +240,7 @@
 				A4E3DBC32A1939F30096CA32 /* FirebaseAnalytics */,
 				A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */,
 				A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */,
+				A4A2D4BC2A195B4C0048773C /* SwiftUINavigation */,
 			);
 			productName = Hypnosis;
 			productReference = A4E3DB922A1920FC0096CA32 /* Hypnosis.app */;
@@ -250,6 +316,7 @@
 			mainGroup = A4E3DB892A1920FC0096CA32;
 			packageReferences = (
 				A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A4A2D4BB2A195B4C0048773C /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
 			);
 			productRefGroup = A4E3DB932A1920FC0096CA32 /* Products */;
 			projectDirPath = "";
@@ -294,9 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A2D4BA2A1958900048773C /* LoginRoute.swift in Sources */,
 				A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */,
 				A4E3DB982A1920FC0096CA32 /* ContentView.swift in Sources */,
+				A4A2D4AE2A194E5B0048773C /* LoginByEmailViewModel.swift in Sources */,
+				A4A2D4AC2A194E310048773C /* LoginByEmailView.swift in Sources */,
+				A4A2D4A82A194D5B0048773C /* Preview.swift in Sources */,
 				A4E3DB962A1920FC0096CA32 /* HypnosisApp.swift in Sources */,
+				A4A2D4B82A1954310048773C /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +699,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A4A2D4BB2A195B4C0048773C /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
 		A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -638,6 +718,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A4A2D4BC2A195B4C0048773C /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A2D4BB2A195B4C0048773C /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
 		A4E3DBC32A1939F30096CA32 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
