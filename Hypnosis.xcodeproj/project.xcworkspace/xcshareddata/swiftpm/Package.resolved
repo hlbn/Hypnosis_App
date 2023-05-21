@@ -109,6 +109,15 @@
       }
     },
     {
+      "identity" : "swift-logger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Qase/swift-logger.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "05cc4b1c49bcd7d9970acc757203224baff005a5"
+      }
+    },
+    {
       "identity" : "swift-protobuf",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
@@ -133,6 +142,15 @@
       "state" : {
         "revision" : "4af50b38daf0037cfbab15514a241224c3f62f98",
         "version" : "0.8.5"
+      }
+    },
+    {
+      "identity" : "zip",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CognitiveDisson/Zip.git",
+      "state" : {
+        "branch" : "fix-xcode13",
+        "revision" : "a9d88e7f51cf3dc83881f1f15d74b02d97dd7c6c"
       }
     }
   ],

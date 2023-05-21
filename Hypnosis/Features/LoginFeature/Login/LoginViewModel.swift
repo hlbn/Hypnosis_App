@@ -8,9 +8,14 @@
 import Foundation
 
 
+enum SignScreenName: String {
+    case signIn = "Sign in"
+    case signUp = "Sign up"
+}
+
+
 // MARK: - ViewModel
 
-@MainActor
 final class LoginViewModel: ObservableObject {
     
     // MARK: - Properties
@@ -29,7 +34,11 @@ final class LoginViewModel: ObservableObject {
     
     // MARK: - Actions
     
-    func onLoginByEmailTapped() {
-        self.route = .loginByEmail
+    func onSignInByEmailTapped() {
+        self.route = .loginByEmail(.signIn)
+    }
+    
+    func onSignUpByEmailTapped() {
+        self.route = .loginByEmail(.signUp)
     }
 }

@@ -22,7 +22,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Button {
-                viewModel.onLoginByEmailTapped()
+                viewModel.onSignInByEmailTapped()
             } label: {
                 Text("Sign in with email")
             }
@@ -36,10 +36,18 @@ struct LoginView: View {
         .padding()
         .sheet(
             unwrapping: self.$viewModel.route,
-            case: /LoginRoute.loginByEmail
+            case: /LoginRoute.loginByEmail(.signIn)
         ) { $route in
             NavigationStack {
-                LoginByEmailView(viewModel: .init(state: .init()))
+                LoginByEmailView(viewModel: .init(state: .init(screen: .signIn), deps: .live()))
+            }
+        }
+        .sheet(
+            unwrapping: self.$viewModel.route,
+            case: /LoginRoute.loginByEmail(.signUp)
+        ) { $route in
+            NavigationStack {
+                LoginByEmailView(viewModel: .init(state: .init(screen: .signUp), deps: .live()))
             }
         }
     }

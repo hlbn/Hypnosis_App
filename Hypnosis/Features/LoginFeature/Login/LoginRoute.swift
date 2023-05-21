@@ -9,5 +9,5 @@ import Foundation
 
 
 enum LoginRoute {
-    case loginByEmail
+    case loginByEmail(SignScreenName)
 }

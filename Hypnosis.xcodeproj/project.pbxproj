@@ -24,6 +24,26 @@
 		A4E3DBC62A1939F30096CA32 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */; };
 		A4E3DBC92A193D3D0096CA32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */; };
 		A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3DBCB2A193DE50096CA32 /* LoginView.swift */; };
+		A4E40D6E2A1AB64B00D6BC1A /* LoginByEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D6D2A1AB64B00D6BC1A /* LoginByEmailService.swift */; };
+		A4E40D702A1AB7D800D6BC1A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D6F2A1AB7D800D6BC1A /* UserModel.swift */; };
+		A4E40D732A1ABF3800D6BC1A /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = A4E40D722A1ABF3800D6BC1A /* Logger */; };
+		A4E40D892A1AC02400D6BC1A /* LogHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D782A1AC02400D6BC1A /* LogHandlerType.swift */; };
+		A4E40D8A2A1AC02400D6BC1A /* LogFormatterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D792A1AC02400D6BC1A /* LogFormatterType.swift */; };
+		A4E40D8B2A1AC02400D6BC1A /* LogInfoCustomMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D7A2A1AC02400D6BC1A /* LogInfoCustomMessageType.swift */; };
+		A4E40D8C2A1AC02400D6BC1A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D7B2A1AC02400D6BC1A /* Log.swift */; };
+		A4E40D8D2A1AC02400D6BC1A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D7C2A1AC02400D6BC1A /* Logger.swift */; };
+		A4E40D8E2A1AC02500D6BC1A /* ConsoleLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D7E2A1AC02400D6BC1A /* ConsoleLogFormatter.swift */; };
+		A4E40D8F2A1AC02500D6BC1A /* DefaultLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D7F2A1AC02400D6BC1A /* DefaultLogFormatter.swift */; };
+		A4E40D902A1AC02500D6BC1A /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D802A1AC02400D6BC1A /* LogLevel.swift */; };
+		A4E40D912A1AC02500D6BC1A /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D812A1AC02400D6BC1A /* LogManager.swift */; };
+		A4E40D922A1AC02500D6BC1A /* FileLogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D832A1AC02400D6BC1A /* FileLogHandler.swift */; };
+		A4E40D932A1AC02500D6BC1A /* ConsoleLogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D842A1AC02400D6BC1A /* ConsoleLogHandler.swift */; };
+		A4E40D942A1AC02500D6BC1A /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D862A1AC02400D6BC1A /* URLRequest.swift */; };
+		A4E40D952A1AC02500D6BC1A /* LogManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D872A1AC02400D6BC1A /* LogManager+Extension.swift */; };
+		A4E40D962A1AC02500D6BC1A /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D882A1AC02400D6BC1A /* HTTPURLResponse.swift */; };
+		A4E40D9A2A1AC35300D6BC1A /* LoginByEmailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D992A1AC35300D6BC1A /* LoginByEmailClient.swift */; };
+		A4E40D9C2A1AC3FD00D6BC1A /* LoginByEmailClient+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D9B2A1AC3FD00D6BC1A /* LoginByEmailClient+Live.swift */; };
+		A4E40D9E2A1AC5CA00D6BC1A /* LoginDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E40D9D2A1AC5CA00D6BC1A /* LoginDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +68,7 @@
 		A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailView.swift; sourceTree = "<group>"; };
 		A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailViewModel.swift; sourceTree = "<group>"; };
 		A4A2D4B72A1954310048773C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		A4A2D4B92A1958900048773C /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		A4A2D4B92A1958900048773C /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRoute.swift; path = Login/LoginRoute.swift; sourceTree = "<group>"; };
 		A4E3DB922A1920FC0096CA32 /* Hypnosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3DB952A1920FC0096CA32 /* HypnosisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisApp.swift; sourceTree = "<group>"; };
 		A4E3DB992A1920FD0096CA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +80,25 @@
 		A4E3DBB22A1920FD0096CA32 /* HypnosisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A4E3DBC02A19388E0096CA32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4E3DBCB2A193DE50096CA32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A4E40D6D2A1AB64B00D6BC1A /* LoginByEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailService.swift; sourceTree = "<group>"; };
+		A4E40D6F2A1AB7D800D6BC1A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A4E40D782A1AC02400D6BC1A /* LogHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHandlerType.swift; sourceTree = "<group>"; };
+		A4E40D792A1AC02400D6BC1A /* LogFormatterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFormatterType.swift; sourceTree = "<group>"; };
+		A4E40D7A2A1AC02400D6BC1A /* LogInfoCustomMessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInfoCustomMessageType.swift; sourceTree = "<group>"; };
+		A4E40D7B2A1AC02400D6BC1A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A4E40D7C2A1AC02400D6BC1A /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A4E40D7E2A1AC02400D6BC1A /* ConsoleLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogFormatter.swift; sourceTree = "<group>"; };
+		A4E40D7F2A1AC02400D6BC1A /* DefaultLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLogFormatter.swift; sourceTree = "<group>"; };
+		A4E40D802A1AC02400D6BC1A /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		A4E40D812A1AC02400D6BC1A /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		A4E40D832A1AC02400D6BC1A /* FileLogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLogHandler.swift; sourceTree = "<group>"; };
+		A4E40D842A1AC02400D6BC1A /* ConsoleLogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogHandler.swift; sourceTree = "<group>"; };
+		A4E40D862A1AC02400D6BC1A /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		A4E40D872A1AC02400D6BC1A /* LogManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LogManager+Extension.swift"; sourceTree = "<group>"; };
+		A4E40D882A1AC02400D6BC1A /* HTTPURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		A4E40D992A1AC35300D6BC1A /* LoginByEmailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByEmailClient.swift; sourceTree = "<group>"; };
+		A4E40D9B2A1AC3FD00D6BC1A /* LoginByEmailClient+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginByEmailClient+Live.swift"; sourceTree = "<group>"; };
+		A4E40D9D2A1AC5CA00D6BC1A /* LoginDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E40D732A1ABF3800D6BC1A /* Logger in Frameworks */,
 				A4A2D4BD2A195B4C0048773C /* SwiftUINavigation in Frameworks */,
 				A4E3DBC62A1939F30096CA32 /* FirebaseAnalyticsSwift in Frameworks */,
 				A4E3DBC92A193D3D0096CA32 /* FirebaseAuth in Frameworks */,
@@ -94,6 +134,8 @@
 		A4A2D4A42A194D1D0048773C /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				A4E40D742A1AC02400D6BC1A /* LogKit */,
+				A4E40D672A1AB52400D6BC1A /* SharedModels */,
 				A4A2D4A52A194D460048773C /* SwiftUIKit */,
 			);
 			path = Kits;
@@ -120,7 +162,6 @@
 			children = (
 				A4E3DBCB2A193DE50096CA32 /* LoginView.swift */,
 				A4A2D4B72A1954310048773C /* LoginViewModel.swift */,
-				A4A2D4B92A1958900048773C /* LoginRoute.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -128,8 +169,9 @@
 		A4A2D4AA2A194E030048773C /* LoginByEmail */ = {
 			isa = PBXGroup;
 			children = (
-				A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */,
-				A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */,
+				A4E40D982A1AC33D00D6BC1A /* Domain */,
+				A4E40D972A1AC32400D6BC1A /* Data */,
+				A4E40D6B2A1AB61F00D6BC1A /* Presentiation */,
 			);
 			path = LoginByEmail;
 			sourceTree = "<group>";
@@ -213,8 +255,130 @@
 			children = (
 				A4A2D4AA2A194E030048773C /* LoginByEmail */,
 				A4A2D4A92A194DCB0048773C /* Login */,
+				A4E40D9D2A1AC5CA00D6BC1A /* LoginDependency.swift */,
+				A4A2D4B92A1958900048773C /* LoginRoute.swift */,
 			);
 			path = LoginFeature;
+			sourceTree = "<group>";
+		};
+		A4E40D672A1AB52400D6BC1A /* SharedModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D682A1AB52B00D6BC1A /* Authentication */,
+			);
+			path = SharedModels;
+			sourceTree = "<group>";
+		};
+		A4E40D682A1AB52B00D6BC1A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D6F2A1AB7D800D6BC1A /* UserModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A4E40D6B2A1AB61F00D6BC1A /* Presentiation */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2D4AB2A194E310048773C /* LoginByEmailView.swift */,
+				A4A2D4AD2A194E5B0048773C /* LoginByEmailViewModel.swift */,
+			);
+			path = Presentiation;
+			sourceTree = "<group>";
+		};
+		A4E40D6C2A1AB62900D6BC1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D6D2A1AB64B00D6BC1A /* LoginByEmailService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4E40D742A1AC02400D6BC1A /* LogKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D752A1AC02400D6BC1A /* Sources */,
+			);
+			name = LogKit;
+			path = ../../csob/Kits/LogKit;
+			sourceTree = "<group>";
+		};
+		A4E40D752A1AC02400D6BC1A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D762A1AC02400D6BC1A /* Core */,
+				A4E40D852A1AC02400D6BC1A /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A4E40D762A1AC02400D6BC1A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D772A1AC02400D6BC1A /* Types */,
+				A4E40D7B2A1AC02400D6BC1A /* Log.swift */,
+				A4E40D7C2A1AC02400D6BC1A /* Logger.swift */,
+				A4E40D7D2A1AC02400D6BC1A /* Formatters */,
+				A4E40D802A1AC02400D6BC1A /* LogLevel.swift */,
+				A4E40D812A1AC02400D6BC1A /* LogManager.swift */,
+				A4E40D822A1AC02400D6BC1A /* Handlers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A4E40D772A1AC02400D6BC1A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D782A1AC02400D6BC1A /* LogHandlerType.swift */,
+				A4E40D792A1AC02400D6BC1A /* LogFormatterType.swift */,
+				A4E40D7A2A1AC02400D6BC1A /* LogInfoCustomMessageType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A4E40D7D2A1AC02400D6BC1A /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D7E2A1AC02400D6BC1A /* ConsoleLogFormatter.swift */,
+				A4E40D7F2A1AC02400D6BC1A /* DefaultLogFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		A4E40D822A1AC02400D6BC1A /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D832A1AC02400D6BC1A /* FileLogHandler.swift */,
+				A4E40D842A1AC02400D6BC1A /* ConsoleLogHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		A4E40D852A1AC02400D6BC1A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D862A1AC02400D6BC1A /* URLRequest.swift */,
+				A4E40D872A1AC02400D6BC1A /* LogManager+Extension.swift */,
+				A4E40D882A1AC02400D6BC1A /* HTTPURLResponse.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4E40D972A1AC32400D6BC1A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D6C2A1AB62900D6BC1A /* Services */,
+				A4E40D9B2A1AC3FD00D6BC1A /* LoginByEmailClient+Live.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A4E40D982A1AC33D00D6BC1A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A4E40D992A1AC35300D6BC1A /* LoginByEmailClient.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +402,7 @@
 				A4E3DBC52A1939F30096CA32 /* FirebaseAnalyticsSwift */,
 				A4E3DBC82A193D3D0096CA32 /* FirebaseAuth */,
 				A4A2D4BC2A195B4C0048773C /* SwiftUINavigation */,
+				A4E40D722A1ABF3800D6BC1A /* Logger */,
 			);
 			productName = Hypnosis;
 			productReference = A4E3DB922A1920FC0096CA32 /* Hypnosis.app */;
@@ -314,6 +479,7 @@
 			packageReferences = (
 				A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				A4A2D4BB2A195B4C0048773C /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+				A4E40D712A1ABF3800D6BC1A /* XCRemoteSwiftPackageReference "swift-logger" */,
 			);
 			productRefGroup = A4E3DB932A1920FC0096CA32 /* Products */;
 			projectDirPath = "";
@@ -358,13 +524,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E40D912A1AC02500D6BC1A /* LogManager.swift in Sources */,
+				A4E40D932A1AC02500D6BC1A /* ConsoleLogHandler.swift in Sources */,
+				A4E40D962A1AC02500D6BC1A /* HTTPURLResponse.swift in Sources */,
 				A4A2D4BA2A1958900048773C /* LoginRoute.swift in Sources */,
+				A4E40D902A1AC02500D6BC1A /* LogLevel.swift in Sources */,
 				A4E3DBCC2A193DE50096CA32 /* LoginView.swift in Sources */,
+				A4E40D9A2A1AC35300D6BC1A /* LoginByEmailClient.swift in Sources */,
+				A4E40D9E2A1AC5CA00D6BC1A /* LoginDependency.swift in Sources */,
+				A4E40D8C2A1AC02400D6BC1A /* Log.swift in Sources */,
+				A4E40D922A1AC02500D6BC1A /* FileLogHandler.swift in Sources */,
+				A4E40D702A1AB7D800D6BC1A /* UserModel.swift in Sources */,
+				A4E40D892A1AC02400D6BC1A /* LogHandlerType.swift in Sources */,
 				A4A2D4AE2A194E5B0048773C /* LoginByEmailViewModel.swift in Sources */,
+				A4E40D9C2A1AC3FD00D6BC1A /* LoginByEmailClient+Live.swift in Sources */,
 				A4A2D4AC2A194E310048773C /* LoginByEmailView.swift in Sources */,
+				A4E40D8A2A1AC02400D6BC1A /* LogFormatterType.swift in Sources */,
 				A4A2D4A82A194D5B0048773C /* Preview.swift in Sources */,
 				A4E3DB962A1920FC0096CA32 /* HypnosisApp.swift in Sources */,
+				A4E40D952A1AC02500D6BC1A /* LogManager+Extension.swift in Sources */,
+				A4E40D8B2A1AC02400D6BC1A /* LogInfoCustomMessageType.swift in Sources */,
+				A4E40D942A1AC02500D6BC1A /* URLRequest.swift in Sources */,
+				A4E40D8E2A1AC02500D6BC1A /* ConsoleLogFormatter.swift in Sources */,
+				A4E40D8D2A1AC02400D6BC1A /* Logger.swift in Sources */,
 				A4A2D4B82A1954310048773C /* LoginViewModel.swift in Sources */,
+				A4E40D6E2A1AB64B00D6BC1A /* LoginByEmailService.swift in Sources */,
+				A4E40D8F2A1AC02500D6BC1A /* DefaultLogFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +896,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		A4E40D712A1ABF3800D6BC1A /* XCRemoteSwiftPackageReference "swift-logger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Qase/swift-logger.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -733,6 +926,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A4E3DBC22A1939F30096CA32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		A4E40D722A1ABF3800D6BC1A /* Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4E40D712A1ABF3800D6BC1A /* XCRemoteSwiftPackageReference "swift-logger" */;
+			productName = Logger;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

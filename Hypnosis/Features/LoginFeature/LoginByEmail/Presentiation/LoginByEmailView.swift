@@ -26,17 +26,24 @@ struct LoginByEmailView: View {
                 .frame(height: 50)
                 .background(Color.gray.opacity(0.4))
                 .cornerRadius(10)
+                .textInputAutocapitalization(.never)
             
             SecureField("Password", text: $viewModel.state.password)
                 .padding(.horizontal, 10)
                 .frame(height: 50)
                 .background(Color.gray.opacity(0.4))
                 .cornerRadius(10)
+                .textInputAutocapitalization(.never)
             
             Button {
-                
+                switch viewModel.state.screen {
+                case .signIn:
+                    Task { await viewModel.signInButtonTapped() }
+                case .signUp:
+                    Task { await viewModel.signUpButtonTapped() }
+                }
             } label: {
-                Text("Sign in")
+                Text(viewModel.state.screen.rawValue)
             }
             .font(.headline)
             .foregroundColor(.white)
@@ -49,7 +56,7 @@ struct LoginByEmailView: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Sign in with email")
+        .navigationTitle("\(viewModel.state.screen.rawValue) with email")
     }
     
     
@@ -65,7 +72,7 @@ struct LoginByEmailView: View {
 
 struct LoginByEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = LoginByEmailViewModel(state: .init())
+        let viewModel = LoginByEmailViewModel(state: .init(screen: .signIn), deps: .demo( ))
         
         NavigationStack {
             LoginByEmailView(viewModel: viewModel)
